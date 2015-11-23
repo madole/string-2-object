@@ -1,6 +1,6 @@
 {
   "name": "string-2-object",
-  "version": "1.0.1",
+  "version": "1.0.2-pre",
   "description": "convert a string to an object, 'parent.child.grandchild.name = \"jim\"' converts to { \"parent\" : { \"child\" : { \"grandchild\" : { \"name: \"jim\" } } } ",
   "main": "string2Object.es5.js",
   "scripts": {
