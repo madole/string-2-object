@@ -1,7 +1,7 @@
 {
   "name": "string-2-object",
   "version": "1.0.0",
-  "description": "convert a string to an object, 'parent.child.grandchild.name = \"jim\"' converts to { \"parent\" : { \"child\" : { \"grandchild\" : { \"name: \"jim } } } ",
+  "description": "convert a string to an object, 'parent.child.grandchild.name = \"jim\"' converts to { \"parent\" : { \"child\" : { \"grandchild\" : { \"name: \"jim\" } } } ",
   "main": "string2Object.es5.js",
   "scripts": {
     "test": "mocha --compilers js:babel-core/register test.js",
