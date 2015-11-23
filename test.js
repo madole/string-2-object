@@ -1,4 +1,4 @@
-const StringToObject = require('./stringToObject');
+const StringToObject = require('./string2Object');
 const { expect, assert } = require('chai');
 const isJson = require('is-json');
 const _ = require('lodash');
@@ -84,8 +84,8 @@ function deepKeys(obj) {
         keys.forEach((key) => {
             if (object.hasOwnProperty(key)) {
                 const deepObj = object[key];
-                const deepKeys = Object.keys(deepObj);
                 if(typeof deepObj === 'object') {
+                    const deepKeys = Object.keys(deepObj);
                     result = result.concat(deepKeys);
                     return getDeepKeys(deepKeys, deepObj);
                 }

@@ -1,4 +1,3 @@
-
 function validateString(strings) {
     if (strings.length <= 1) {
         throw new Error('must be a valid string');
@@ -44,7 +43,7 @@ class StringToObject {
               })
             }
         });
-        
+
         return endString.trimLeft();
 
     }

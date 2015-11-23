@@ -4,13 +4,19 @@
   "description": "convert a string to an object, 'parent.child.grandchild.name = \"jim\"' converts to { \"parent\" : { \"child\" : { \"grandchild\" : { \"name: \"jim } } } ",
   "main": "string2Object.es5.js",
   "scripts": {
-    "test": "mocha --compilers js:babel/register test.js",
-    "test:watch": "mocha --compilers js:babel/register test.js --watch",
-    "compile": ""
+    "test": "mocha --compilers js:babel-core/register test.js",
+    "test:watch": "mocha --compilers js:babel-core/register test.js --watch",
+    "compile": "babel string2Object.js -o string2Object.es5.js"
   },
   "author": "Andrew McDowell <madoliole@gmail.com> (http://madole.github.io/)",
   "license": "ISC",
   "dependencies": {
-    "babel": "^6.1.18"
+    "babel": "^6.1.18",
+    "babel-cli": "^6.2.0",
+    "babel-core": "^6.2.1",
+    "babel-preset-es2015": "^6.1.18",
+    "chai": "^3.4.1",
+    "is-json": "^1.2.5",
+    "lodash": "^3.10.1"
   }
 }
