@@ -1,0 +1,16 @@
+{
+  "name": "string-2-object",
+  "version": "1.0.0",
+  "description": "convert a string to an object, 'parent.child.grandchild.name = \"jim\"' converts to { \"parent\" : { \"child\" : { \"grandchild\" : { \"name: \"jim } } } ",
+  "main": "string2Object.es5.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel/register test.js",
+    "test:watch": "mocha --compilers js:babel/register test.js --watch",
+    "compile": ""
+  },
+  "author": "Andrew McDowell <madoliole@gmail.com> (http://madole.github.io/)",
+  "license": "ISC",
+  "dependencies": {
+    "babel": "^6.1.18"
+  }
+}
